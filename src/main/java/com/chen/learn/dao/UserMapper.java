@@ -2,6 +2,7 @@ package com.chen.learn.dao;
 
 import com.chen.learn.domain.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * TODO 类描述

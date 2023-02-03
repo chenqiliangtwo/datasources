@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * TODO 类描述
  *
@@ -23,8 +25,13 @@ public class UserAction {
     private UserService userService;
 
     @GetMapping("/getUser.do")
-    public User getUser(String id){
+    public List<User> getUser(String id){
         return userService.getUserById(id);
+    }
+
+    @GetMapping("/getUserOne.do")
+    public User getUserOne(String id){
+        return userService.getUserByIdOne(id);
     }
 
 }

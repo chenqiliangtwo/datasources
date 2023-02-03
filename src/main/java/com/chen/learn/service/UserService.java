@@ -2,6 +2,8 @@ package com.chen.learn.service;
 
 import com.chen.learn.domain.User;
 
+import java.util.List;
+
 /**
  * TODO 类描述
  *
@@ -11,5 +13,7 @@ import com.chen.learn.domain.User;
  */
 public interface UserService {
 
-    User getUserById(String id);
+    List<User> getUserById(String id);
+
+    User getUserByIdOne(String id);
 }
